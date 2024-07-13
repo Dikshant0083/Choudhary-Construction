@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Kohinoor</title>
+    <style>
+        :root {
+            --primary-color: #e39f2a;
+            --secondary-color:#1a5f7a;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(224, 246, 251);
+            color: var(--text-color);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s ease;
+            border-radius: 20px;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        
+        .about-section {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        p, li {
+            font-size: 1rem;
+            color: #555;
+        }
+        
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .team-member {
+            flex-basis: calc(50% - 2rem);
+            margin: 1rem;
+            text-align: center;
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid var(--primary-color);
+        }
+        .video-section {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .team-member {
+                flex-basis: 100%;
+            }
+        }
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        footer h3 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            color: var(--white);
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo2.png" alt="Kohinoor Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#featured-products">Products</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="about-section">
+            <h1>About Kohinoor</h1>
+            <img src="product1.jpg" alt="Kohinoor Product" class="about-image">
+            
+            <h2>Key Features of HDPE Pond Liners</h2>
+            <p>Choosing the right HDPE (High-Density Polyethylene) pond liner is crucial for a successful and long-lasting pond or water feature installation. Here are the key features to consider:</p>
+            <ul>
+                
+                <li><strong>Thickness:</strong> Measured in mils (1 mil = 0.001 inches), it affects durability and puncture resistance.</li>
+                <li><strong>Material Grade:</strong> Ensure it's high-quality HDPE, suitable for pond applications.</li>
+                <li><strong>UV Resistance:</strong> Essential for outdoor use, it helps prevent degradation from sunlight exposure.</li>
+                <li><strong>Puncture Resistance:</strong> Measures the liner's ability to withstand damage from sharp objects.</li>
+                <li><strong>Tear Resistance:</strong> Indicates the liner's ability to resist tearing when punctured or damaged.</li>
+                <li><strong>Size and Cut:</strong> Ensure the liner is the appropriate size and shape for your pond or water feature.</li>
+                <li><strong>Warranty and Durability:</strong> Look for a liner with a reasonable warranty (e.g., 10-20 years) and a proven track record of durability.</li>
+                <li><strong>Certifications and Compliance:</strong> Check for relevant certifications, such as NSF/ANSI 61 for drinking water safety.</li>
+            </ul>
+            <p>By considering these key features, you can select the right HDPE pond liner for your specific needs and ensure a successful and long-lasting installation.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Certification</h2>
+            <img src="certificate.jpg" alt="Kohinoor Certification" class="about-image">
+            <p>The Kohinoor Polypond HDPE plastic sheet has received legal approval from the Indian government, backed by a valid certificate. As the number one brand in India, Kohinoor's HDPE plastic sheets offer numerous benefits:</p>
+            <ul>
+                <li>Durable and resistant to punctures and tears</li>
+                <li>Can withstand extreme temperatures</li>
+                <li>Chemically inert, ensuring no contamination of water or harm to the environment</li>
+                <li>UV-stabilized, preventing degradation from sunlight exposure</li>
+                <li>Lifespan of up to 20 years</li>
+            </ul>
+            <p>Kohinoor's HDPE plastic sheets provide a reliable and cost-effective solution for pond lining, water storage, and other applications.</p>
+        </section>
+        <section class="video-section">
+            <h2>Product Demonstration</h2>
+            <div class="video-container">
+                <iframe src="video.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Watch our product demonstration to see the quality and durability of Kohinoor HDPE pond liners in action.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Team</h2>
+            <p>Our success is driven by our dedicated team of professionals. Each member brings unique skills and experiences, united by a shared passion for technology and innovation.</p>
+            <div class="team-section">
+                <div class="team-member">
+                    <img src="ceo.jpg" alt="Ramesh Khileri - CEO">
+                    <h3>Mr. Ramesh Khileri</h3>
+                    <p>CEO & Founder of Choudhary Construction</p>
+                </div>
+                <div class="team-member">
+                    <img src="founder.jpg" alt="Ramesh Khileri - Manager">
+                    <h3>Ramesh Khileri</h3>
+                    <p>Manager</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="Contact">
+        <h3>Thank You for Visiting Kohinoor</h3>
+        <p>If you have any queries, please don't hesitate to contact us:</p>
+        <p>Phone: <a href="tel:+919460263524">+91 94602-63524(Ramesh Khileri)</a></p>
+        <p>Email: <a href="mailto:rameshkhileri94@gmail.com">rameshkhileri94@gmail.com</a></p>
+    </footer>
+</body>
+</html>

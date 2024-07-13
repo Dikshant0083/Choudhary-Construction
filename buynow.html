@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kohinoor Pondliner</title>
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #797876;
+        }
+        header {
+            background-color: #e39f2a;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s ease;
+            border-radius: 20px;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 5%;
+        }
+
+    
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 5px auto;
+            background-color:#c4e1e9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 100%;
+            margin-right: 20px;
+            margin: 20px;
+            border: #333;
+            border-style: solid;
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-details {
+            flex: 1;
+            min-width: 300px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        .map-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo2.png" alt="Company Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#featured-products">Products</a></li>
+                <!-- <li><a href="gallery.html">Gallery</a></li> -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="product1.jpg" alt="Kohinoor Pondliner">
+        </div>
+        <div class="product-details">
+            <h1>Kohinoor Pondliner</h1>
+            <table>
+                <tr>
+                    <th>Product Details</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Material</td>
+                    <td>HDPE Geomembrance</td>
+                </tr>
+                <tr>
+                    <td>Thickness</td>
+                    <td>300/500/700/1000 micron</td>
+                </tr>
+                <tr>
+                    <td>Application</td>
+                    <td>Pond lining</td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td>Black . Blue</td>
+                </tr>
+                <tr>
+                    <td>Brand</td>
+                    <td>Kohinoor</td>
+                </tr>
+                <tr>
+                    <td>Usage/Application</td>
+                    <td>Storage of water</td>
+                </tr>
+                <tr>
+                    <td>Packing Type</td>
+                    <td>Roll Form</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>10.30 Rs/Sqfeet</td>
+                </tr>
+                <tr>
+                    <td>Size Of Pannel(Infeet)</td>
+                    <td>30 width 120 length</td>
+                </tr>
+                <tr>
+                    <td>Temperature Resistance</td>
+                    <td>UV STABILIZED</td>
+                </tr>
+            </table>
+        </div>
+    
+    </div>
+    <footer id="Contact">
+        <p>Contact us:</p>
+        <p>Phone: <a href="tel:+919460263524">+91 94602-63524(Ramesh Khileri)</a></p>
+        <p>Email: <a href="mailto:rameshkhileri94@gmail.com">rameshkhileri94@gmail.com</a></p>
+        <p>Address: Shop no.C4 opp. new Dhan mandi raisingh Nagar Anupgarh rod, Disti. Anupgarh</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111094.48958457826!2d73.44610899999999!3d29.525020899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393d8b42ca673535%3A0x5b575c935fbff266!2sChoudhary%20construction%20and%20building%20materials!5e0!3m2!1sen!2sin!4v1720790787605!5m2!1sen!2sin" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+</html>

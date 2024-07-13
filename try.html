@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Pond Yojana Information and Benefits</title>
+    <style>
+        :root {
+            --primary-color: #e39f2a;
+            --secondary-color: #4CAF50;
+            --text-color: #333;
+            --white: #fff;
+            --background-light: #f9f9f9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s ease;
+            border-radius: 20px;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .flex-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .flex-item {
+            flex: 1 1 300px;
+        }
+
+        .product-image img,
+        .benefits-image img,
+        .info-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-details h2,
+        .benefits h2,
+        .info-content h2 {
+            color: var(--secondary-color);
+        }
+
+        .benefits {
+            background-color: var(--background-light);
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .benefits ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .benefits li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .benefits li::before {
+            content: "✓";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .info-section {
+            background-color: var(--background-light);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo2.png" alt="Kohinoor Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#featured-products">Products</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="flex-section">
+            <div class="flex-item product-image">
+                <img src="product3.jpg" alt="Farm Pond Yojana">
+            </div>
+            <div class="flex-item product-details">
+                <h2>About Farm Pond Yojana</h2>
+                <p>The Farm Pond Construction Program, initiated on April 1, 2020, by the Rajasthan Agriculture Department, offers a solution to addressing a critical challenge of water scarcity for Rajasthan's farmers. This program allows farmers to establish farm ponds, essentially rainwater collection structures, for irrigation purposes. Recognizing the program's significance, the state government provides subsidies to facilitate farm pond construction. This enables farmers to effectively utilize rainwater and irrigate their fields.</p>
+                <p>The farmers of the state will be provided a subsidy of up to Rs 1 lakh 35 thousand by the government for making farm ponds in their fields so that the farmers can store rainwater in this farm pond and can easily cultivate their barren land and increase their income.</p>
+            </div>
+        </div>
+        <div class="flex-section">
+            <div class="flex-item benefits">
+                <h2>Key Benefits</h2>
+                <ul>
+                    <li>Rainwater Harvesting and Irrigation</li>
+                    <li>Increased Crop Diversification</li>
+                    <li>Climate Resilience</li>
+                    <li>Livestock Management</li>
+                    <li>Income Enhancement</li>
+                    <li>Groundwater Recharge</li>
+                    <li>Environmental Impact</li>
+                </ul>
+            </div>
+            <div class="flex-item benefits-image">
+                <img src="pond.jpg" alt="Farm Pond Benefits">
+            </div>
+        </div>
+        <div class="flex-section info-section">
+            <div class="flex-item info-content">
+                <h2>Implementation Process</h2>
+                <p>The Farm Pond Yojana is implemented through a systematic process to ensure maximum benefit to farmers:</p>
+                <ol>
+                    <li>Application submission by interested farmers</li>
+                    <li>Verification of eligibility criteria</li>
+                    <li>Site assessment and technical feasibility study</li>
+                    <li>Approval and fund allocation</li>
+                    <li>Construction of farm pond under expert guidance</li>
+                    <li>Quality check and completion certificate</li>
+                    <li>Training on efficient water management</li>
+                </ol>
+                <p>This structured approach helps in creating sustainable water resources for agriculture, contributing to the overall development of rural areas in Rajasthan.</p>
+            </div>
+            <div class="flex-item info-image">
+                <img src="implementation.jpg" alt="Farm Pond Implementation">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

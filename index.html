@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kohinoor Polypond - Product Selling Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #e39f2a;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s ease;
+            border-radius: 20px;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 5%;
+        }
+
+        .banner {
+            background-image: url(polypond.jpg);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #e39f2a;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            padding: 1rem;
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .product p {
+            padding: 0 1rem 1rem;
+            margin: 0;
+            color: #666;
+        }
+
+        .product button {
+            display: block;
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #e39f2a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #d38d1a;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        .map-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+            }
+
+            nav ul li {
+                margin: 0 1rem;
+            }
+
+            .banner {
+                padding: 3rem 1rem;
+            }
+
+            .banner h1 {
+                font-size: 2rem;
+            }
+
+            .banner p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo2.png" alt="Company Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#featured-products">Products</a></li>
+                <!-- <li><a href="#gallery">Gallery</a></li> -->
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="banner">
+            <h1>Welcome to Our Kohinoor Polypond Website</h1>
+            <p>Discover amazing products at great prices with Choudhary construction and building materials!</p>
+        </section>
+
+        <section id="featured-products" class="section">
+            <h2>Featured Products</h2>
+            <h3>Kohinoor Tarpaulin Company provides a range of products related to tarpaulins, covers, and protective materials.</h3>
+            <ul>
+                <li>Waterproof Tarpaulins</li>
+                <li>Pond Lining</li>
+                <li>Safety Nets</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Product Gallery</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="product1.jpg" alt="Kohinoor Pond Detail">
+                    <h3>Kohinoor Pond Detail</h3>
+                    <p>High-quality pond lining solutions</p>
+                    <a href="buynow.html"><button>Know More</button></a>
+                </div>
+                <div class="product">
+                    <img src="sample.jpg" alt="Sample Product">
+                    <h3>Sample Product</h3>
+                    <p>About sample product</p>
+                    <a href="sample.html"><button>Know More</button></a>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Product 2">
+                    <h3>Government Scheme</h3>
+                    <p>Henre benefits of government scheme </p>
+                    <a href="farm.html"><button>Know More</button></a>
+                </div>
+                <div class="product">
+                    <img src="bakground.jpg" alt="About Kohinoor">
+                    <h3>About Kohinoor</h3>
+                    <p>Learn more about our company</p>
+                    <a href="about.html"><button>Know More</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Kohinoor Tarpaulin Company</h2>
+            <p>Kohinoor Tarpaulin Company is a leading provider of high-quality tarpaulins, covers, and protective materials. With years of experience in the industry, we are committed to delivering durable and reliable products to meet our customers' needs.</p>
+        </section>
+    </main>
+
+    <footer id="Contact">
+        <p>Contact us:</p>
+        <p>Phone: <a href="tel:+919460263524">+91 94602-63524(Ramesh Khileri)</a></p>
+        <p>Email: <a href="mailto:rameshkhileri94@gmail.com">rameshkhileri94@gmail.com</a></p>
+        <p>Address: Shop no.C4 opp. new Dhan mandi raisingh Nagar Anupgarh rod, Disti. Anupgarh</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111094.48958457826!2d73.44610899999999!3d29.525020899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393d8b42ca673535%3A0x5b575c935fbff266!2sChoudhary%20construction%20and%20building%20materials!5e0!3m2!1sen!2sin!4v1720790787605!5m2!1sen!2sin" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+</html>
